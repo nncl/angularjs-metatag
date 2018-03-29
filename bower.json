@@ -1,0 +1,21 @@
+{
+  "name": "angularjs-metatag",
+  "description": "Testing async metatags' load",
+  "main": "index.js",
+  "authors": [
+    "@nncl"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/nncl/angularjs-metatag",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-update-meta": "^2.0.1"
+  }
+}

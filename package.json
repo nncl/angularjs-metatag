@@ -23,5 +23,6 @@
   "homepage": "https://github.com/nncl/angularjs-metatag#readme",
   "dependencies": {
     "express": "^4.16.3"
-  }
+  },
+  "devDependencies": {}
 }
