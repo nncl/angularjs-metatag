@@ -6,10 +6,13 @@ const express = require('express')
     , app = express();
 
 app.use(express.static(path.join(__dirname, './')));
-console.log(path.join(__dirname, './'));
 
 app.get('/', function (req, res) {
     res.sendFile(__dirname + "/index.html");
+});
+
+app.get('/banner/:id', function (req, res) {
+    res.sendFile(__dirname + "/assets/tpl/sec-" + req.params.id + ".html");
 });
 
 app.listen(port, function () {
