@@ -11,10 +11,6 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname + "/index.html");
 });
 
-app.get('/banner/:id', function (req, res) {
-    res.sendFile(__dirname + "/assets/tpl/sec-" + req.params.id + ".html");
-});
-
 app.listen(port, function () {
     console.log('Example app listening on port 3000!');
 });
