@@ -4,7 +4,19 @@ Testing async metatags' load.
 
 Check out the [example](https://angularjs-metatag.herokuapp.com).
 
-## Heroku
+## Getting Started
+
+```
+npm start
+```
+
+For development mode, run:
+
+```
+npm run dev
+```
+
+## Deploy to Heroku
 
 ```
 heroku login
