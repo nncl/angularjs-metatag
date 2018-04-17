@@ -6,9 +6,11 @@ const express = require('express')
     , app = express();
 
 app.use(express.static(path.join(__dirname, './')));
+app.set('view engine', 'pug');
+app.enable('view cache');
 
 app.get('/', function (req, res) {
-    res.sendFile(__dirname + "/index.html");
+    res.render('index', { title: 'Hey', message: 'Hello there!'});
 });
 
 app.listen(port, function () {
